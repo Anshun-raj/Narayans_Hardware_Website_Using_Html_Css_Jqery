@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header{
+    background-color: skyblue;
+    display: flex;
+    width: 100%;
+    height: 7.5vh;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+    position: fixed;
+}
+
+.header .title{
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header span{
+    color: red;
+}
+
+.header .navbar{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    align-items: center;
+}
+
+.header .navbar li{
+    list-style: none;
+    margin: 0 50px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.header .navbar a:hover{
+    border-bottom: 3px solid red;
+    color: yellow;
+    transition: 0.5s ease-in-out;
+}
+
+.header .fas{
+    color: #fff;
+    font-size: 20px;
+}
+
+.home{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcyan;
+}
+
+.home .homeInfo{
+    text-align: center;
+    line-height: 1.8;
+}
+
+.home .homeInfo h2{
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
+}
+
+.home .homeInfo p{
+    font-size: 29px;
+    font-weight: bold;
+    color: lightcoral;
+    margin-bottom: 10px;
+}
+
+.home .homeInfo button{
+    padding: 12px 15px;
+    border: none;
+    cursor: pointer;
+    background-color: grey;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15.5px;
+}
+
+.home .homeInfo button:hover{
+    background-color: red;
+    transition: 0.5s all;
+    color: #fff;
+}
+
+
+
+.about{
+    height: 90vh;
+    width: 100%;
+    background-color: lightcyan;
+}
+
+.about h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.about span{
+    color: red;
+}
+
+.about .aboutInfo{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.about .aboutInfo .aboutLeft{
+    width: 50%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.about .aboutInfo .aboutLeft img{
+    width: 400px;
+    border: 2px solid red;
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about .aboutInfo .aboutRight{
+    width: 50%;
+    height: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.about .aboutInfo .aboutRight h3{
+    color: red;
+    font-size: 30px;
+}
+
+.about .aboutInfo .aboutRight p{
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product{
+    height: 90vh;
+    width: 100%;
+    background-color: lightcyan;  
+}
+
+.product h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product span{
+    color: red;
+}
+
+.product .productInfo{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.product .productInfo .productCard{
+    width: 350px;
+    height: 450px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.9;
+    border-radius: 5px;
+}
+
+.product .productInfo .productCard h4{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.product .productInfo .productCard .fa{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.product .productInfo .productCard button{
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15.5px;
+    color: #fff;
+}
+
+
+.review{
+    height: 90vh;
+    width: 100%;
+    background-color: lightcyan;  
+}
+
+
+.review h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.review span{
+    color: red;
+}
+
+.review .reviewInfo{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.review .reviewInfo .reviewCard{
+    width: 350px;
+    height: 450px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.9;
+    border-radius: 5px;
+}
+
+
+.review .reviewInfo .reviewCard h4{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.review .reviewInfo .reviewCard .fa{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.review .reviewInfo .reviewCard button{
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15.5px;
+    color: #fff;
+}
+
+.contact{
+    height: 90vh;
+    width: 100%;
+    background-color: lightcyan;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .contact h2{
+    text-align: center;
+    font-size: 34px;
+    color: red;
+ }
+ .contact .contactInfo form {
+    width: 500px;
+    margin: 75px 0;
+    text-align: center;
+}
+
+.contact .contactInfo form input {
+width: 90%;
+height: 4.5vh;
+margin: 15px;
+}
+
+.contact .contactInfo form input::placeholder{
+  padding: 0 5px;
+}
+
+.contact .contactInfo form button {
+display: block;
+position: relative;
+left: 41%;
+margin: 15px 0;
+padding: 8px 20px;
+font-weight: bold;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+background-color: red;
+color: #fff;
+transition: 0.5s all;
+}
+
+.contact .contactInfo form button:hover{
+ color: red;
+ background-color: black;
+}
+
+  
+
+
+
+.footer{
+    background-color: skyblue;
+    width: 100%;
+    height: 7.5vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer h2{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.footer span{
+    color: red;
+}
