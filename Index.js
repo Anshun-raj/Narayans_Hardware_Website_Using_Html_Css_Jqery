@@ -16,6 +16,20 @@ $(document).ready(function(){
     })
 })
 
+var count=0;
+
+function counter(){
+    count++;
+    $("#cart").text(count);
+}
+
+$(document).ready(function(){
+    $(".btn2").click(function(){
+        counter();
+    })
+})
+
+
 
 
 
